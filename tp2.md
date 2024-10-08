@@ -125,159 +125,312 @@ Voir http.pcapng
 ```
 Voicie la commande  netstat pour voir les connexions actives sur le système.
 
-PS C:\Users\willi> netstat -an
+
+PS C:\Windows\system32> netstat -a -b -n
 
 Connexions actives
 
   Proto  Adresse locale         Adresse distante       État
   TCP    0.0.0.0:135            0.0.0.0:0              LISTENING
+  RpcSs
+ [svchost.exe]
   TCP    0.0.0.0:445            0.0.0.0:0              LISTENING
-  TCP    0.0.0.0:3926           0.0.0.0:0              LISTENING
+ Impossible d’obtenir les informations de propriétaire
   TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING
+  CDPSvc
+ [svchost.exe]
+  TCP    0.0.0.0:7680           0.0.0.0:0              LISTENING
+ Impossible d’obtenir les informations de propriétaire
   TCP    0.0.0.0:27036          0.0.0.0:0              LISTENING
+ [steam.exe]
   TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING
+ [lsass.exe]
   TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING
+ Impossible d’obtenir les informations de propriétaire
   TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING
+  Schedule
+ [svchost.exe]
   TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING
-  TCP    0.0.0.0:49676          0.0.0.0:0              LISTENING
-  TCP    0.0.0.0:49678          0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:9010         0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:9010         127.0.0.1:53245        ESTABLISHED
-  TCP    127.0.0.1:9010         127.0.0.1:53250        ESTABLISHED
-  TCP    127.0.0.1:9010         127.0.0.1:53269        ESTABLISHED
-  TCP    127.0.0.1:9080         0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:9100         0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:9100         127.0.0.1:53261        ESTABLISHED
-  TCP    127.0.0.1:9180         0.0.0.0:0              LISTENING
+  EventLog
+ [svchost.exe]
+  TCP    0.0.0.0:49672          0.0.0.0:0              LISTENING
+ [spoolsv.exe]
+  TCP    0.0.0.0:49691          0.0.0.0:0              LISTENING
+ Impossible d’obtenir les informations de propriétaire
+  TCP    10.33.74.229:139       0.0.0.0:0              LISTENING
+ Impossible d’obtenir les informations de propriétaire
+  TCP    10.33.74.229:49454     20.199.120.151:443     ESTABLISHED
+  WpnService
+ [svchost.exe]
+  TCP    10.33.74.229:57574     52.123.200.65:443      ESTABLISHED
+ [ms-teams.exe]
+  TCP    10.33.74.229:57602     20.199.120.151:443     ESTABLISHED
+ [OneDrive.exe]
+  TCP    10.33.74.229:57609     52.123.139.78:443      ESTABLISHED
+ [msedgewebview2.exe]
+  TCP    10.33.74.229:57615     162.159.130.234:443    ESTABLISHED
+ [Discord.exe]
+  TCP    10.33.74.229:57635     185.25.182.20:27021    ESTABLISHED
+ [steam.exe]
+  TCP    10.33.74.229:57718     54.146.56.54:443       ESTABLISHED
+ [EpicGamesLauncher.exe]
+  TCP    10.33.74.229:57725     20.199.120.151:443     ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:57765     192.229.221.95:80      CLOSE_WAIT
+ [HxTsr.exe]
+  TCP    10.33.74.229:57843     20.250.77.142:443      ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:57858     3.64.143.176:443       ESTABLISHED
+ Impossible d’obtenir les informations de propriétaire
+  TCP    10.33.74.229:57898     52.97.201.210:443      ESTABLISHED
+ [SearchHost.exe]
+  TCP    10.33.74.229:57905     13.107.246.254:443     CLOSE_WAIT
+ [SearchHost.exe]
+  TCP    10.33.74.229:57912     172.65.251.78:443      ESTABLISHED
+ [chrome.exe]
+  TCP    10.33.74.229:58085     185.199.111.154:443    ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58090     13.89.178.26:443       ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58092     185.199.111.154:443    ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58093     185.199.111.133:443    ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58095     140.82.113.26:443      ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58102     34.120.22.49:443       TIME_WAIT
+  TCP    10.33.74.229:58108     40.126.49.152:443      TIME_WAIT
+  TCP    10.33.74.229:58109     3.211.157.115:443      ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58112     104.18.86.42:443       ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58118     54.204.178.109:443     ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58119     54.170.196.176:443     ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58121     54.84.54.3:443         ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58122     3.211.157.115:443      ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58126     54.84.54.3:443         ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58127     3.211.157.115:443      ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58128     3.211.157.115:443      ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58137     86.64.231.167:443      CLOSE_WAIT
+ [msedge.exe]
+  TCP    10.33.74.229:58154     20.189.173.12:443      TIME_WAIT
+  TCP    10.33.74.229:58156     104.18.86.42:443       TIME_WAIT
+  TCP    10.33.74.229:58158     20.189.173.7:443       ESTABLISHED
+ Impossible d’obtenir les informations de propriétaire
+  TCP    10.33.74.229:58160     52.203.66.187:443      CLOSE_WAIT
+ [EpicGamesLauncher.exe]
+  TCP    10.33.74.229:58161     45.57.91.1:443         ESTABLISHED
+ [msedge.exe]
+  TCP    10.33.74.229:58162     23.217.238.254:443     ESTABLISHED
+ [steamwebhelper.exe]
+  TCP    10.33.74.229:58164     44.220.113.135:443     CLOSE_WAIT
+ [EpicGamesLauncher.exe]
+  TCP    10.33.74.229:58165     20.42.65.93:443        ESTABLISHED
+ [Microsoft.SharePoint.exe]
+  TCP    10.33.74.229:58166     34.120.22.49:443       ESTABLISHED
+ [chrome.exe]
+  TCP    10.33.74.229:58167     34.236.219.197:443     ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:6463         0.0.0.0:0              LISTENING
+ [Discord.exe]
+  TCP    127.0.0.1:9222         0.0.0.0:0              LISTENING
+ [msedgewebview2.exe]
   TCP    127.0.0.1:27060        0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:45654        0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:49685        127.0.0.1:49686        ESTABLISHED
-  TCP    127.0.0.1:49686        127.0.0.1:49685        ESTABLISHED
-  TCP    127.0.0.1:49687        127.0.0.1:49688        ESTABLISHED
-  TCP    127.0.0.1:49688        127.0.0.1:49687        ESTABLISHED
-  TCP    127.0.0.1:49689        127.0.0.1:49690        ESTABLISHED
-  TCP    127.0.0.1:49690        127.0.0.1:49689        ESTABLISHED
-  TCP    127.0.0.1:49714        127.0.0.1:49715        ESTABLISHED
-  TCP    127.0.0.1:49715        127.0.0.1:49714        ESTABLISHED
-  TCP    127.0.0.1:49886        0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:53236        127.0.0.1:65001        ESTABLISHED
-  TCP    127.0.0.1:53245        127.0.0.1:9010         ESTABLISHED
-  TCP    127.0.0.1:53250        127.0.0.1:9010         ESTABLISHED
-  TCP    127.0.0.1:53261        127.0.0.1:9100         ESTABLISHED
-  TCP    127.0.0.1:53269        127.0.0.1:9010         ESTABLISHED
-  TCP    127.0.0.1:53300        127.0.0.1:57654        ESTABLISHED
-  TCP    127.0.0.1:53751        127.0.0.1:28194        SYN_SENT
-  TCP    127.0.0.1:57654        0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:57654        127.0.0.1:53300        ESTABLISHED
-  TCP    127.0.0.1:57771        0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:57771        127.0.0.1:57790        ESTABLISHED
-  TCP    127.0.0.1:57773        0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:57773        127.0.0.1:57789        ESTABLISHED
-  TCP    127.0.0.1:57789        127.0.0.1:57773        ESTABLISHED
-  TCP    127.0.0.1:57790        127.0.0.1:57771        ESTABLISHED
-  TCP    127.0.0.1:57846        0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:65001        0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:65001        127.0.0.1:53236        ESTABLISHED
-  TCP    192.168.1.26:139       0.0.0.0:0              LISTENING
-  TCP    192.168.1.26:53237     52.112.100.64:443      ESTABLISHED
-  TCP    192.168.1.26:53291     192.168.1.16:60369     TIME_WAIT
-  TCP    192.168.1.26:53305     140.82.112.25:443      ESTABLISHED
-  TCP    192.168.1.26:53307     52.123.159.129:443     ESTABLISHED
-  TCP    192.168.1.26:53324     155.133.248.43:27018   ESTABLISHED
-  TCP    192.168.1.26:53337     34.226.132.151:443     ESTABLISHED
-  TCP    192.168.1.26:53451     162.159.130.234:443    TIME_WAIT
-  TCP    192.168.1.26:53661     104.208.16.95:443      TIME_WAIT
-  TCP    192.168.1.26:53662     20.189.173.4:443       TIME_WAIT
-  TCP    192.168.1.26:53684     204.79.197.222:443     ESTABLISHED
-  TCP    192.168.1.26:53691     2.22.57.122:443        ESTABLISHED
-  TCP    192.168.1.26:53724     54.225.130.14:443      ESTABLISHED
-  TCP    192.168.1.26:53726     152.199.19.160:443     ESTABLISHED
-  TCP    192.168.1.26:53727     104.85.38.96:443       ESTABLISHED
-  TCP    192.168.1.26:53729     52.201.28.61:443       ESTABLISHED
-  TCP    192.168.1.26:53735     23.15.179.49:80        TIME_WAIT
-  TCP    192.168.1.26:53736     23.15.179.49:80        TIME_WAIT
-  TCP    192.168.1.26:53739     23.1.254.216:443       TIME_WAIT
-  TCP    192.168.1.26:53744     20.189.173.11:443      ESTABLISHED
-  TCP    192.168.1.26:57836     104.18.41.183:443      CLOSE_WAIT
-  TCP    192.168.1.26:57839     104.18.41.183:443      CLOSE_WAIT
-  TCP    192.168.1.26:59777     4.231.141.208:443      ESTABLISHED
+ [steam.exe]
+  TCP    127.0.0.1:49678        127.0.0.1:49679        ESTABLISHED
+ [WUDFHost.exe]
+  TCP    127.0.0.1:49679        127.0.0.1:49678        ESTABLISHED
+ [WUDFHost.exe]
+  TCP    127.0.0.1:49853        0.0.0.0:0              LISTENING
+ [steam.exe]
+  TCP    127.0.0.1:49853        127.0.0.1:49859        ESTABLISHED
+ [steam.exe]
+  TCP    127.0.0.1:49854        0.0.0.0:0              LISTENING
+ [steam.exe]
+  TCP    127.0.0.1:49854        127.0.0.1:49858        ESTABLISHED
+ [steam.exe]
+  TCP    127.0.0.1:49858        127.0.0.1:49854        ESTABLISHED
+ [steamwebhelper.exe]
+  TCP    127.0.0.1:49859        127.0.0.1:49853        ESTABLISHED
+ [steamwebhelper.exe]
+  TCP    127.0.0.1:55403        127.0.0.1:55404        ESTABLISHED
+ [WUDFHost.exe]
+  TCP    127.0.0.1:55404        127.0.0.1:55403        ESTABLISHED
+ [WUDFHost.exe]
+  TCP    127.0.0.1:56039        127.0.0.1:56040        ESTABLISHED
+ [ipfsvc.exe]
+  TCP    127.0.0.1:56040        127.0.0.1:56039        ESTABLISHED
+ [ipfsvc.exe]
+  TCP    127.0.0.1:56296        0.0.0.0:0              LISTENING
+ [RiotClientServices.exe]
   TCP    192.168.56.1:139       0.0.0.0:0              LISTENING
+ Impossible d’obtenir les informations de propriétaire
   TCP    [::]:135               [::]:0                 LISTENING
+  RpcSs
+ [svchost.exe]
   TCP    [::]:445               [::]:0                 LISTENING
-  TCP    [::]:3926              [::]:0                 LISTENING
+ Impossible d’obtenir les informations de propriétaire
+  TCP    [::]:7680              [::]:0                 LISTENING
+ Impossible d’obtenir les informations de propriétaire
   TCP    [::]:49664             [::]:0                 LISTENING
+ [lsass.exe]
   TCP    [::]:49665             [::]:0                 LISTENING
+ Impossible d’obtenir les informations de propriétaire
   TCP    [::]:49668             [::]:0                 LISTENING
+  Schedule
+ [svchost.exe]
   TCP    [::]:49669             [::]:0                 LISTENING
-  TCP    [::]:49676             [::]:0                 LISTENING
-  TCP    [::]:49678             [::]:0                 LISTENING
+  EventLog
+ [svchost.exe]
+  TCP    [::]:49672             [::]:0                 LISTENING
+ [spoolsv.exe]
+  TCP    [::]:49691             [::]:0                 LISTENING
+ Impossible d’obtenir les informations de propriétaire
   TCP    [::1]:42050            [::]:0                 LISTENING
-  TCP    [::1]:49677            [::]:0                 LISTENING
-  TCP    [::1]:49886            [::]:0                 LISTENING
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53241  [2603:1020:805:3::401]:443  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53262  [2603:1020:805:3::401]:443  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53302  [2a00:1450:400c:c1d::bc]:5228  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53351  [2603:1020:805:3::401]:443  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53649  [2603:1027:1:108::80]:443  TIME_WAIT
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53681  [2620:1ec:46::254]:443  CLOSE_WAIT
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53682  [2620:1ec:bdf::42]:443  CLOSE_WAIT
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53683  [2620:1ec:46::254]:443  CLOSE_WAIT
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53694  [2620:1ec:bdf::254]:443  CLOSE_WAIT
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53699  [2a02:26f0:2b00:14::216:e14a]:443  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53700  [2a02:26f0:2b00:14::216:e14e]:443  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53704  [2a01:111:202c::254]:443  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53705  [2603:1000:0:2::26]:443  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53714  [2001:4c28:1:430:82:145:216:15]:443  CLOSE_WAIT
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53715  [2606:4700:90:0:f22e:fbec:5bed:a9b9]:443  ESTABLISHED
-  TCP    [2a01:cb19:cfc:1d00:5446:83b9:4625:8a09]:53721  [2001:4c28:1:430:82:145:216:15]:443  ESTABLISHED
+ [Microsoft.SharePoint.exe]
+  TCP    [::1]:49673            [::]:0                 LISTENING
+ [jhi_service.exe]
   UDP    0.0.0.0:500            *:*
+  IKEEXT
+ [svchost.exe]
   UDP    0.0.0.0:4500           *:*
+  IKEEXT
+ [svchost.exe]
   UDP    0.0.0.0:5050           *:*
+  CDPSvc
+ [svchost.exe]
   UDP    0.0.0.0:5353           *:*
+  Dnscache
+ [svchost.exe]
   UDP    0.0.0.0:5353           *:*
+ [chrome.exe]
   UDP    0.0.0.0:5353           *:*
+ [chrome.exe]
   UDP    0.0.0.0:5353           *:*
+ [msedge.exe]
   UDP    0.0.0.0:5353           *:*
+ [msedge.exe]
+  UDP    0.0.0.0:5353           *:*
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*
+ [msedge.exe]
+  UDP    0.0.0.0:5353           *:*
+ [msedge.exe]
   UDP    0.0.0.0:5355           *:*
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:6666           *:*
+ [EpicGamesLauncher.exe]
   UDP    0.0.0.0:27036          *:*
-  UDP    0.0.0.0:49455          *:*
-  UDP    0.0.0.0:50084          *:*
-  UDP    0.0.0.0:50350          *:*
-  UDP    0.0.0.0:51600          *:*
-  UDP    0.0.0.0:54959          *:*
-  UDP    0.0.0.0:57760          *:*
+ [steam.exe]
+  UDP    0.0.0.0:50060          34.120.22.49:443
+ [chrome.exe]
+  UDP    0.0.0.0:50081          *:*
+ [ms-teams.exe]
+  UDP    0.0.0.0:52821          *:*
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:54517          8.8.4.4:443
+ [msedge.exe]
+  UDP    0.0.0.0:60872          8.8.8.8:443
+ [chrome.exe]
+  UDP    0.0.0.0:61282          *:*
+ [EpicGamesLauncher.exe]
+  UDP    0.0.0.0:64938          *:*
+ [ms-teams.exe]
+  UDP    10.33.74.229:137       *:*
+ Impossible d’obtenir les informations de propriétaire
+  UDP    10.33.74.229:138       *:*
+ Impossible d’obtenir les informations de propriétaire
+  UDP    10.33.74.229:1900      *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    10.33.74.229:2177      *:*
+  QWAVE
+ [svchost.exe]
+  UDP    10.33.74.229:51970     *:*
+  SSDPSRV
+ [svchost.exe]
   UDP    127.0.0.1:1900         *:*
-  UDP    127.0.0.1:10040        *:*
-  UDP    127.0.0.1:59070        *:*
-  UDP    127.0.0.1:61946        *:*
-  UDP    127.0.0.1:64255        127.0.0.1:64255
-  UDP    192.168.1.26:137       *:*
-  UDP    192.168.1.26:138       *:*
-  UDP    192.168.1.26:1900      *:*
-  UDP    192.168.1.26:5353      *:*
-  UDP    192.168.1.26:59069     *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:51971        *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:57990        127.0.0.1:57990
+  iphlpsvc
+ [svchost.exe]
   UDP    192.168.56.1:137       *:*
+ Impossible d’obtenir les informations de propriétaire
   UDP    192.168.56.1:138       *:*
+ Impossible d’obtenir les informations de propriétaire
   UDP    192.168.56.1:1900      *:*
-  UDP    192.168.56.1:5353      *:*
-  UDP    192.168.56.1:59068     *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.56.1:2177      *:*
+  QWAVE
+ [svchost.exe]
+  UDP    192.168.56.1:54383     *:*
+  SSDPSRV
+ [svchost.exe]
   UDP    [::]:500               *:*
+  IKEEXT
+ [svchost.exe]
   UDP    [::]:4500              *:*
+  IKEEXT
+ [svchost.exe]
   UDP    [::]:5353              *:*
+ [chrome.exe]
   UDP    [::]:5353              *:*
+  Dnscache
+ [svchost.exe]
   UDP    [::]:5353              *:*
+ [msedge.exe]
+  UDP    [::]:5353              *:*
+ [chrome.exe]
+  UDP    [::]:5353              *:*
+ [msedge.exe]
   UDP    [::]:5355              *:*
-  UDP    [::]:49455             *:*
-  UDP    [::]:50084             *:*
-  UDP    [::]:50350             *:*
-  UDP    [::]:51600             *:*
-  UDP    [::]:54960             *:*
-  UDP    [::]:57760             *:*
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:50081             *:*
+ [ms-teams.exe]
+  UDP    [::]:52821             *:*
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:64938             *:*
+ [ms-teams.exe]
   UDP    [::1]:1900             *:*
-  UDP    [::1]:5353             *:*
-  UDP    [::1]:59067            *:*
-  UDP    [fe80::6d49:7bf0:ecb9:a74d%17]:1900  *:*
-  UDP    [fe80::6d49:7bf0:ecb9:a74d%17]:59066  *:*
-  UDP    [fe80::91c6:f33b:6281:b555%4]:1900  *:*
-  UDP    [fe80::91c6:f33b:6281:b555%4]:59065  *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::1]:54382            *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::a9b8:14ae:b7a6:3e3e%12]:1900  *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::a9b8:14ae:b7a6:3e3e%12]:2177  *:*
+  QWAVE
+ [svchost.exe]
+  UDP    [fe80::a9b8:14ae:b7a6:3e3e%12]:54381  *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::e495:f205:63dd:cedf%3]:1900  *:*
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::e495:f205:63dd:cedf%3]:2177  *:*
+  QWAVE
+ [svchost.exe]
+  UDP    [fe80::e495:f205:63dd:cedf%3]:54380  *:*
+  SSDPSRV
+ [svchost.exe]
 ```
